@@ -1,6 +1,7 @@
 #include <stdio.h>
+#define MAX_SIZE 100001
 
-int arr[100000];
+int arr[MAX_SIZE];
 
 void bubbleSort(int N);
 void swap(int a, int b);

@@ -1,6 +1,7 @@
 #include <stdio.h>
+#define MAX_SIZE 100001
 
-int arr[100001];
+int arr[MAX_SIZE];
 
 int getMidPivot(int start ,int end);
 void quicksort(int start, int end);

@@ -1,6 +1,7 @@
 #include <stdio.h>
+#define MAX_SIZE 100001
 
-int arr[100001]
+int arr[MAX_SIZE];
 
 void mergesort(int start, int end);
 void merge(int start, int mid, int end);

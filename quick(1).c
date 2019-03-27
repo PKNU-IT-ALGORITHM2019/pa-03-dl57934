@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlin.h>
+#define MAX_SIZE 100001
 
-int arr[100001];
+int arr[MAX_SIZE];
 
 void quicksort(int start, int end);
 int partition(int start, int end);
