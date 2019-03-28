@@ -17,3 +17,5 @@
 3. 기타 사항 
 
 cpp로 작성하려다 java로 짜는 것이 더 좋다는 생각이들어서 java로 작성하였습니다. 
+<img width="658" alt="스크린샷 2019-03-28 오후 8 32 08" src="https://user-images.githubusercontent.com/23521909/55154715-db70ea80-5198-11e9-8227-9b6e751036c5.png">
+

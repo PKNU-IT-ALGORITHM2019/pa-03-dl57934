@@ -8,7 +8,7 @@ public class SortMachine{
     private final int CHANGE_SIZE_10000 = 2, CHANGE_SIZE_100000 = 4;
     private ArrayList<SortStrategy> sortList = new ArrayList<SortStrategy>();
     private StringBuilder resultBuilder = new StringBuilder();
-    
+
     public void appendSortList(SortStrategy sortMachine){
         sortList.add(sortMachine);
     }
