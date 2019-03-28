@@ -1,8 +1,12 @@
 #include <stdio.h>
+#include <time.h>
 #define MAX_SIZE 100001
 
 int arr[MAX_SIZE];
 
+void arrayRandomInit(int size);
+float getSpendTime(clock_t start, clock_t end);
+void arrayReverseInit(int size);
 void insertionSort(int arr[], int n);
 
 int main(){
@@ -20,4 +24,18 @@ void insertionSort(int arr[], int n){
 		arr[j+1] = key;
 	}
 
+}
+
+void arrayRandomInit(int size){
+	for(int i = 0; i < size ; i++)
+		arr[i]= rand()%size;
+}
+
+float getSpendTime(clock_t start, clock_t end){
+	return (float)(end - start)/CLOCKS_PER_SEC;
+}
+
+void arrayReverseInit(int size){
+	for(int i = size; i >= 0; i-- )
+		arr[i] = i;
 }
