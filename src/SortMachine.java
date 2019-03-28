@@ -36,12 +36,15 @@ public class SortMachine{
 
     public void setTable(){
         resultBuilder.append("Sort Result ");
-        int[] num = new int[]{1000, 1000, 10000, 10000, 100000, 100000};
+        int size = 1000;
         for(int i = 0; i < 6; i++){
-            if(i%2==EVEN)
-                resultBuilder.append("Random "+num[i]+" ");
+            if(i%2==EVEN) {
+                resultBuilder.append("Random " + size + " ");
+                if(i == 2 || i ==4)
+                    size*=10;
+            }
             else if(i%2==ODD)
-                resultBuilder.append("REVERSE "+num[i]+" ");
+                resultBuilder.append("REVERSE "+size+" ");
         }
 
         resultBuilder.append("\n");
