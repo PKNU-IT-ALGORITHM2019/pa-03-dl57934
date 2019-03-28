@@ -3,7 +3,7 @@ public class Main {
     private static SortFactory sortFactory = new SortFactory();
     private static SortMachine sortMachine = new SortMachine();
     public static void main(String[] args){
-
+         sortMachine.setTable();
 
          SortStrategy bubble= sortFactory.makingSortMachine("Bubble");
          SortStrategy selection = sortFactory.makingSortMachine("Selection");

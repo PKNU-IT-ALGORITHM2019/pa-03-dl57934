@@ -8,12 +8,14 @@ public class SortMachine{
     private final int CHANGE_SIZE_10000 = 2, CHANGE_SIZE_100000 = 4;
     private ArrayList<SortStrategy> sortList = new ArrayList<SortStrategy>();
     private StringBuilder resultBuilder = new StringBuilder();
+    
     public void appendSortList(SortStrategy sortMachine){
         sortList.add(sortMachine);
     }
 
     public void executeMachine(){
         Iterator it = sortList.iterator();
+
         while(it.hasNext()){
             SortStrategy sortStrategy = (SortStrategy)it.next();
             for(int i = 0; i < 6; i++){
@@ -23,13 +25,27 @@ public class SortMachine{
                         sortStrategy.setSize(10000);
                     if(i == CHANGE_SIZE_100000)
                         sortStrategy.setSize(100000);
-                }if(i%2==ODD)
+                } else if(i%2==ODD)
                     sortStrategy.setType(REVERSE);
                 resultBuilder.append(sortStrategy.execute()+" ");
                 if(i == FINAL_INDEX)
                     resultBuilder.append("\n");
             }
         }
+    }
+
+    public void setTable(){
+        resultBuilder.append("Sort Result ");
+        int[] num = new int[]{1000, 1000, 10000, 10000, 100000, 100000};
+        for(int i = 0; i < 6; i++){
+            if(i%2==EVEN)
+                resultBuilder.append("Random "+num[i]+" ");
+            else if(i%2==ODD)
+                resultBuilder.append("REVERSE "+num[i]+" ");
+        }
+
+        resultBuilder.append("\n");
+
     }
 
     public void getResult(){
