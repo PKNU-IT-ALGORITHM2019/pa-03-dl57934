@@ -18,4 +18,10 @@ public class Bubble  extends SortStrategy{
         arr[b] = temp;
     }
 
+    @Override
+    public String getName() {
+        return "Bubble";
+    }
+
+
 }

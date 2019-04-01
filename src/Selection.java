@@ -5,7 +5,7 @@ public class Selection extends  SortStrategy{
     public void sort() {
         arr = setArray(getSize(), getType(), arr);
 
-        for(int i = 0; i < getSize()-1; i++){
+        for(int i = 1; i < getSize()-1; i++){
             int least = i;
             for(int j = i+1; j < getSize(); j++)
                 if(arr[least] > arr[j])
@@ -21,6 +21,11 @@ public class Selection extends  SortStrategy{
         int temp = arr[a];
         arr[a] = arr[b];
         arr[b] = temp;
+    }
+
+    @Override
+    public String getName() {
+        return "Selection";
     }
 
 

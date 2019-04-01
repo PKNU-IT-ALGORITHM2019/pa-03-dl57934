@@ -4,7 +4,7 @@ public class QuickSort extends SortStrategy{
     @Override
     public void sort() {
         arr = setArray(getSize(), getType(), arr);
-        quickSort(0, getSize() -1);
+        quickSort(1, getSize() -1);
     }
 
     @Override
@@ -12,6 +12,11 @@ public class QuickSort extends SortStrategy{
         int temp = arr[a];
         arr[a] = arr[b];
         arr[b] = temp;
+    }
+
+    @Override
+    public String getName() {
+        return null;
     }
 
 

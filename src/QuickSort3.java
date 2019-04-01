@@ -10,4 +10,9 @@ public class QuickSort3 extends QuickSort{
     public int getPivot(int start, int end, int[] arr) {
         return arr[random.nextInt(getSize()-1)];
     }
+
+    @Override
+    public String getName(){
+        return "Quick3";
+    }
 }

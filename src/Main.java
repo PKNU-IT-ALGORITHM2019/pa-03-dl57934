@@ -12,6 +12,8 @@ public class Main {
          SortStrategy quick2 = sortFactory.makingSortMachine("Quick2");
          SortStrategy quick3 = sortFactory.makingSortMachine("Quick3");
          SortStrategy merge = sortFactory.makingSortMachine("Merge");
+         SortStrategy heap = sortFactory.makingSortMachine("Heap");
+         SortStrategy collection = sortFactory.makingSortMachine("CollectionsSort");
 
          machineAppend(bubble);
          machineAppend(selection);
@@ -20,6 +22,8 @@ public class Main {
          machineAppend(quick2);
          machineAppend(quick3);
          machineAppend(merge);
+         machineAppend(heap);
+         machineAppend(collection);
 
          sortMachine.executeMachine();
          sortMachine.getResult();

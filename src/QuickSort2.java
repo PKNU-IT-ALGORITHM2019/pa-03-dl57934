@@ -15,4 +15,9 @@ public class QuickSort2 extends  QuickSort{
         else
             return arr[end];
     }
+
+    @Override
+    public String getName(){
+        return "Quick2";
+    }
 }

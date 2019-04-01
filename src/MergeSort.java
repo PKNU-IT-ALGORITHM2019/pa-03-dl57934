@@ -4,9 +4,8 @@ public class MergeSort extends SortStrategy{
 
     @Override
     public void sort() {
-//        System.out.println(getSize());
         arr = setArray(getSize(), getType(), arr);
-        mergeSort(0, getSize()-1);
+        mergeSort(1, getSize()-1);
     }
 
     public void mergeSort(int start, int end){
@@ -43,5 +42,10 @@ public class MergeSort extends SortStrategy{
     @Override
     public void swap(int a, int b) {
 
+    }
+
+    @Override
+    public String getName() {
+        return "Merge";
     }
 }

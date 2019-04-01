@@ -4,6 +4,8 @@ public abstract class SortStrategy {
     private int type = 0, size = 1000;
     abstract void sort();
     abstract void swap(int a, int b);
+    abstract public String getName();
+
 
     public int getType(){
         return type;
@@ -20,6 +22,8 @@ public abstract class SortStrategy {
     public void setType(int type){
         this.type = type;
     }
+
+
 
     public String execute(){
         long start = System.currentTimeMillis();

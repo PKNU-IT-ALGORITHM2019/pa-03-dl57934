@@ -18,6 +18,7 @@ public class SortMachine{
 
         while(it.hasNext()){
             SortStrategy sortStrategy = (SortStrategy)it.next();
+            resultBuilder.append(sortStrategy.getName()+" ");
             for(int i = 0; i < 6; i++){
                 if(i%2==EVEN) {
                     sortStrategy.setType(RANDOM);

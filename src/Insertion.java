@@ -19,5 +19,10 @@ public class Insertion extends SortStrategy{
 
     }
 
+    @Override
+    public String getName() {
+        return "Insertion";
+    }
+
 
 }

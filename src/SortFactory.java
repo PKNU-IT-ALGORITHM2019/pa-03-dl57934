@@ -20,6 +20,13 @@ public class SortFactory {
 
         else if(name.equals("Insertion"))
             return new Insertion();
+
+        else if(name.equals("Heap"))
+            return new Heap();
+
+        else if(name.equals("CollectionsSort"))
+            return new CollectionsSort();
+
         return null;
     }
 }
